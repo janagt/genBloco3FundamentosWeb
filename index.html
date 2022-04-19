@@ -1,26 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu Perfil</title>
-</head>
-<body>
-    <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./contato.html">Contato</a></li>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <ul id="menu">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./contato.html">Contato</a></li>
     </ul>
 
-    
-    <h1>Olá mundo!</h1>
+    <h1 class="center">Olá mundo!</h1>
 
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptas ipsam delectus praesentium vitae commodi, alias in, iste culpa est provident corporis inventore. A odit esse nulla laborum tenetur veniam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem eum odio harum, libero aperiam sapiente molestiae rem atque repellat fuga, iure perferendis architecto obcaecati neque minima similique culpa ullam itaque?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, fuga, dolore ad consequatur animi impedit iste dicta reprehenderit corrupti, repudiandae architecto sed inventore? Consequuntur dolorum maiores eum doloremque. Eos, quaerat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae consectetur saepe officiis natus rerum amet, exercitationem animi doloremque delectus ullam sequi minima quia reiciendis. Dicta consequuntur veritatis fugit dolor illo.</p>
+    <div class="container">
+      <div class="p-30">
+        <p class="justify">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
+          voluptas ipsam delectus praesentium vitae commodi, alias in, iste
+          culpa est provident corporis inventore. A odit esse nulla laborum
+          tenetur veniam. Lorem ipsum, dolor sit amet consectetur adipisicing
+          elit. Voluptatem eum odio harum, libero aperiam sapiente molestiae rem
+          atque repellat fuga, iure perferendis architecto obcaecati neque
+          minima similique culpa ullam itaque?
+        </p>
+        <p class="justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+          fuga, dolore ad consequatur animi impedit iste dicta reprehenderit
+          corrupti, repudiandae architecto sed inventore? Consequuntur dolorum
+          maiores eum doloremque. Eos, quaerat. Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Beatae consectetur saepe officiis natus
+          rerum amet, exercitationem animi doloremque delectus ullam sequi
+          minima quia reiciendis. Dicta consequuntur veritatis fugit dolor illo.
+        </p>
+      </div>
 
-    <img src="assets/img/foto.jpg" alt="Minha foto"/>
+      <div>
+        <img class="br-50 wh-300 p-30" src="assets/img/foto.jpg" alt="Minha foto" />
+      </div>
+    </div>
 
-    <h2>Como fazer</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/DmFm4PL9sW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</body>
+    <h2 class="center">Como fazer</h2>
+    <div class="container mb-50">
+      <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/DmFm4PL9sW4"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    </div>
+  </body>
+
+  <hr>
+
+  <footer>
+    <div class="container">
+      <a href="http://" target="_blank"><img class="tm-social p-10" src="./assets/img/github.png" alt="Logo github"></a>
+      <a href="http://" target="_blank"><img class="tm-social p-10" src="./assets/img/linkedin.png" alt="Logo linkedin"></a>
+      <a href="http://" target="_blank"><img class="tm-social p-10" src="./assets/img/instagram.png" alt="Logo instagram"></a>
+    </div>
+
+    <p class="center">
+      Todos os direitos reservados © Janaina Teixeira
+    </p>
+  </footer>
+
 </html>
