@@ -1,99 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu Perfil</title>
 
-    <link
-      href="https://www.janainadesign.com/favicon.ico"
-      rel="icon"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <ul id="menu">
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./contato.html">Contato</a></li>
-    </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Perfil</title>
 
-    <h1 class="center">Entre em contato:</h1>
+  <link href="./assets/img/favicon2.ico" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a class="active" href="./contato.html">Contato</a></li>
+        <!-- <li><button onclick="mudaQuack()">Quack</button></li> -->
+        <li>
+          <label class="switch">
+            <input type="checkbox" onclick="mudaQuack()">
+            <span class="slider"></span>
+          </label>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="tamanhoPg">
+
+    <h2 class="contato center">Entre em contato:</h2>
     <div class="container c-top">
       <div>
-        <h2>Mande uma mensagem:</h2>
+        <!-- <h3 class="contato">Mande um alo!</h3> -->
 
         <form>
-          <label for="nome">Nome:</label><br />
-          <input type="text" id="nome" onkeyup="validaNome()" />
-          <div id="txtNome"></div>
-          <br />
-          <label for="email">E-mail:</label> <br />
-          <input type="email" id="email" onkeyup="validaEmail()" />
-          <div id="txtEmail"></div>
-          <br />
-          <label for="assunto">Assunto:</label><br />
-          <textarea
-            name="assunto"
-            id="assunto"
-            cols="30"
-            rows="5"
-            onkeyup="validaAssunto()"
-          ></textarea>
-          <div id="txtAssunto"></div>
-          <br />
-          <button onclick="enviar()">Enviar</button>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" placeholder="Tio Patinhas" onkeyup="validaNome()" />
+          <span id="txtNome"></span>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" placeholder="tiopatinhas@contato.com" onkeyup="validaEmail()" />
+          <span id="txtEmail"></span>
+          <label for="assunto">Assunto:</label>
+          <textarea name="assunto" id="assunto" cols="30" rows="5" placeholder="Manda um alô!"
+            onkeyup="validaAssunto()"></textarea>
+          <span id="txtAssunto"></span>
+          <button onclick="enviar()">Quack</button>
         </form>
       </div>
 
       <div class="ml-50">
-        <h2>Endereço:</h2>
+        <!-- <h3 class="contato">Endereço:</h3> -->
 
-        <p>Av. Heitor Penteado, 1000</p>
-        <p>Campinas, SP</p>
+        <p>Av. Dr. Heitor Penteado – Taquaral</p>
+        <p>Campinas, SP</p><br>
 
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.0851044049487!2d-47.04869708547616!3d-22.873314385028785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c5ef04bed127%3A0xde079de81023194c!2sR%C3%A9plica%20da%20Caravela%20de%20Pedro%20%C3%81lvares%20Cabral!5e0!3m2!1spt-BR!2sbr!4v1650302253830!5m2!1spt-BR!2sbr"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          id="mapa"
-          onmousemove="mapaZoom()"
-          onmouseout="mapaNormal()"
-        ></iframe>
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7352.2388696318285!2d-47.04994500000001!3d-22.872046!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x705206975200ec15!2sPedalinhos%20da%20Lagoa%20do%20Parque%20Portugal!5e0!3m2!1spt-BR!2sbr!4v1650491951012!5m2!1spt-BR!2sbr"
+          width="450" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" id="mapa" onmousemove="mapaZoom()"
+          onmouseout="mapaNormal()"></iframe>
       </div>
     </div>
-  </body>
+
+
+  </main>
+</body>
+
+<footer>
+
+  <!--  <marquee behavior="scroll" direction="right" scrollamount="2"><img
+      src="https://c.tenor.com/QZIYqR8m3U0AAAAC/duck-dankus.gif" height="40px" alt=""></marquee> -->
+
   <hr />
 
-  <footer>
-    <div class="container">
-      <a href="http://" target="_blank"
-        ><img
-          class="tm-social p-10"
-          src="./assets/img/github.png"
-          alt="Logo github"
-      /></a>
-      <a href="http://" target="_blank"
-        ><img
-          class="tm-social p-10"
-          src="./assets/img/linkedin.png"
-          alt="Logo linkedin"
-      /></a>
-      <a href="http://" target="_blank"
-        ><img
-          class="tm-social p-10"
-          src="./assets/img/instagram.png"
-          alt="Logo instagram"
-      /></a>
-    </div>
+  <div class="container">
+    <a href="http://" target="_blank"><img class="tm-social p-10" src="./assets/img/github.png" alt="Logo github" /></a>
+    <a href="http://" target="_blank"><img class="tm-social p-10" src="./assets/img/linkedin.png"
+        alt="Logo linkedin" /></a>
+    <a href="http://" target="_blank"><img class="tm-social p-10" src="./assets/img/instagram.png"
+        alt="Logo instagram" /></a>
+  </div>
 
-    <p class="center">Todos os direitos reservados © Janaina Teixeira</p>
-  </footer>
+  <p class="center">Todos os direitos reservados © Janaina Teixeira</p>
+</footer>
 
-  <script src="./assets/js/script.js"></script>
+<script src="./assets/js/script.js"></script>
+
 </html>

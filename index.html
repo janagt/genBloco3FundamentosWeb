@@ -1,98 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu Perfil</title>
 
-    <link
-      href="https://www.janainadesign.com/favicon.ico"
-      rel="icon"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <ul id="menu">
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./contato.html">Contato</a></li>
-    </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Perfil</title>
 
-    <h1 class="center">Olá mundo!</h1>
+  <link href="./assets/img/favicon2.ico" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="nav-quack">
+      <ul>
+        <li><a class="active" href="./index.html">Home</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+        <!-- <li><button onclick="mudaQuack()">Quack</button></li> -->
+        <li>
+          <label class="switch">
+            <input type="checkbox" onclick="mudaQuack()">
+            <span class="slider"></span>
+          </label>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="center">O Pato Tira Retrato</h1>
 
     <div class="container">
       <div class="p-30">
         <p class="justify">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-          voluptas ipsam delectus praesentium vitae commodi, alias in, iste
-          culpa est provident corporis inventore. A odit esse nulla laborum
-          tenetur veniam. Lorem ipsum, dolor sit amet consectetur adipisicing
-          elit. Voluptatem eum odio harum, libero aperiam sapiente molestiae rem
-          atque repellat fuga, iure perferendis architecto obcaecati neque
-          minima similique culpa ullam itaque?
-        </p>
-        <p class="justify">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
-          fuga, dolore ad consequatur animi impedit iste dicta reprehenderit
-          corrupti, repudiandae architecto sed inventore? Consequuntur dolorum
-          maiores eum doloremque. Eos, quaerat. Lorem ipsum dolor sit amet
-          consectetur, adipisicing elit. Beatae consectetur saepe officiis natus
-          rerum amet, exercitationem animi doloremque delectus ullam sequi
-          minima quia reiciendis. Dicta consequuntur veritatis fugit dolor illo.
-        </p>
+        <p>
+          O pato ganhou sapato. <br />
+          Foi logo tirar retrato. <br />nm
+        </p><br />
+        <p>
+          O macaco retratista<br />
+          Era mesmo um grande artista.<br />
+        </p><br />
+        <p>
+          Disse a o pato: “não se mexa<br />
+          Para depois não ter queixa”.<br />
+        </p><br />
+        <p>
+          E o pato, duro e sem graça<br />
+          Como se fosse de massa!<br />
+        </p><br />
+        <p>
+          “Olhe pra cá direitinho:<br />
+          Vai sair um passarinho”.<br />
+        </p><br />
+        <p>
+          O passarinho saiu,<br />
+          Bicho assim nunca se viu.<br />
+        </p><br />
+        <p>
+          Com três penas no topete<br />
+          E no rabo apenas sete.<br />
+        </p><br />
+        </p><br />
+        <p class="justify"><small class="assinatura">– Mário Quintana</small></p>
       </div>
 
-      <div>
-        <img
-          class="br-50 wh-300 p-30"
-          src="assets/img/foto.jpg"
-          alt="Minha foto"
-        />
+      <div class="p-30">
+        <img class="br-50 wh-300 patinho" src="assets/img/foto.jpg" alt="Minha foto" onclick="playSound()" />
       </div>
     </div>
 
-    <h2 class="center">Como fazer</h2>
-    <div class="container mb-50">
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/DmFm4PL9sW4"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+    <h2 class="center">Desenhe seu pato</h2>
+    <div class="container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/DmFm4PL9sW4" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
     </div>
-  </body>
+  </main>
+</body>
+
+<footer>
+  <!-- <marquee behavior="scroll" direction="right" scrollamount="2"><img
+      src="https://c.tenor.com/QZIYqR8m3U0AAAAC/duck-dankus.gif" height="40px" alt=""></marquee> -->
 
   <hr />
 
-  <footer>
-    <div class="container">
-      <a href="http://" target="_blank"
-        ><img
-          class="tm-social p-10"
-          src="./assets/img/github.png"
-          alt="Logo github"
-      /></a>
-      <a href="http://" target="_blank"
-        ><img
-          class="tm-social p-10"
-          src="./assets/img/linkedin.png"
-          alt="Logo linkedin"
-      /></a>
-      <a href="http://" target="_blank"
-        ><img
-          class="tm-social p-10"
-          src="./assets/img/instagram.png"
-          alt="Logo instagram"
-      /></a>
-    </div>
+  <div class="container">
+    <a href="http://" target="_blank"><img class="tm-social p-10" src="./assets/img/github.png" alt="Logo github" /></a>
+    <a href="http://" target="_blank"><img class="tm-social p-10" src="./assets/img/linkedin.png"
+        alt="Logo linkedin" /></a>
+    <a href="http://" target="_blank"><img class="tm-social p-10" src="./assets/img/instagram.png"
+        alt="Logo instagram" /></a>
+  </div>
 
-    <p class="center">Todos os direitos reservados © Janaina Teixeira</p>
-  </footer>
+  <p class="center">Todos os direitos reservados © Janaina Teixeira</p>
+</footer>
 
-  <script src="./assets/js/script.js"></script>
+<script src="./assets/js/script.js"></script>
 
 </html>

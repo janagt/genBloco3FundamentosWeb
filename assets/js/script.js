@@ -7,6 +7,7 @@ let emailOk = false;
 let assuntoOk = false;
 
 let mapa = document.querySelector("#mapa");
+/* let audio = document.querySelector("#audio"); */
 
 // funções formulário
 
@@ -14,7 +15,7 @@ function validaNome() {
   let txtNome = document.querySelector("#txtNome");
 
   if (nome.value.length < 3) {
-    txtNome.innerHTML = "O nome precisa ter mais do que três caracteres.";
+    txtNome.innerHTML = "O nome precisa ter mais do que 3 caracteres.";
     txtNome.style.color = "red";
   } else {
     txtNome.innerHTML = "Nome válido!";
@@ -27,7 +28,7 @@ function validaEmail() {
   let txtEmail = document.querySelector("#txtEmail");
 
   if (email.value.indexOf("@") == -1 || email.value.indexOf(".") == -1) {
-    txtEmail.innerHTML = "E-mail inválido";
+    txtEmail.innerHTML = "O email precisa ter @ e .";
     txtEmail.style.color = "red";
   } else {
     txtEmail.innerHTML = "E-mail válido";
@@ -69,3 +70,25 @@ function mapaNormal() {
   mapa.style.height = "450px";
 }
  */
+
+
+// ZONA DE TESTES
+
+function mudaQuack(){
+  document.body.classList.toggle('quack')
+}
+
+// som pato
+/* const playSound = new Audio("/assets/quack.mp4");
+
+playSound.oncanplay = function(){
+  playSound.play();
+}
+
+playSound.loop = false;
+
+playSound.onended = function(){
+  playSound.stop();
+} */
+
+let playSound = () => new Audio("/assets/quack.mp4").play()
